@@ -110,7 +110,7 @@
 				<!-- Footer -->
 				<footer id="footer">
 					<section>
-						<form method="post" action="send_email.php">
+						<form onsubmit="sendMail(); return false;">
 							<div class="fields">
 								<h2><a href="#"> Contact Me </a></h2>
 								<div class="field">
@@ -132,15 +132,33 @@
 						</form>
 					</section>
 				</footer>
+
+				<script>
+					function sendMail() {
+						// Get form values
+						var name = document.getElementById("name").value;
+						var email = document.getElementById("email").value;
+						var message = document.getElementById("message").value;
+
+						// Create the mailto link
+						var mailtoLink = "mailto:your-email@example.com" +
+										"?subject=Contact Form Submission from " + encodeURIComponent(name) +
+										"&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message);
+
+						// Open the user's email client
+						window.location.href = mailtoLink;
+					}
+				</script>
+
 							
 							
 		<!-- Copyright -->
-<div id="copyright">
-    <ul>
-        <li>&copy; Kargichauhan</li>
-        <li>Unauthorized use of my stuff is strictly prohibited, unless you bring me matcha :( </li>
-    </ul>
-</div>		
+		<div id="copyright">
+			<ul>
+				<li>&copy; Kargichauhan</li>
+				<li>Unauthorized use of my stuff is strictly prohibited, unless you bring me matcha :( </li>
+			</ul>
+		</div>		
 								
 						
 						
