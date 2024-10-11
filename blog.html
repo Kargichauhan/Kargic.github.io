@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Blog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Blog Page Styles */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 50px 0;
+        }
+
+        .blog-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .blog-card .image {
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .blog-card .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .blog-card:hover .image img {
+            transform: scale(1.1);
+        }
+
+        .blog-card .content {
+            padding: 20px;
+        }
+
+        .blog-card h4 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Responsive for smaller screens */
+        @media screen and (max-width: 768px) {
+            .blog-card .content {
+                padding: 15px;
+            }
+
+            .blog-card h4 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">My Blog</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="generic.html">Resume</a></li>
+                <li><a href="research.html">Research Paper</a></li>
+                <li><a href="Achievement.html">Achievements</a></li>
+                <li class="active"><a href="blog.html">Blog</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://x.com/Kargichauhan_" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://github.com/Kargichauhan" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="https://www.linkedin.com/in/kargichauhan/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Blog Section -->
+            <section class="post">
+                <header class="major">
+                    <h1>My Creative Blog</h1>
+                    <p>Welcome to a world of ideas, insights, and stories.</p>
+                </header>
+
+                <!-- Blog Grid Layout -->
+                <div class="blog-grid">
+
+                    <!-- Blog Card 1 -->
+                    <div class="blog-card">
+                        <div class="image">
+                            <img src="00000.jpeg" alt="Blog Post 1">
+                        </div>
+                        <div class="content">
+                            <h4>
+                                <a href="https://medium.com/@kargic/exploring-the-nexus-of-ai-machine-learning-data-science-and-deep-learning-e5b2557c95b" target="_blank" style="text-decoration: none; color: inherit;">
+                                    Exploring the Nexus of AI, Machine Learning, Data Science, and Deep Learning
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 2 -->
+                    <div class="blog-card">
+                        <div class="image">
+                            <img src="8888.png" alt="Blog Post 2">
+                        </div>
+                        <div class="content">
+                            <h4>
+                                <a href="https://docs.google.com/document/d/1Euog1x3nZXwHHhn5WE48ds4VND5WnNo5/edit" target="_blank" style="text-decoration: none; color: inherit;">
+                                    Investigation on the relationship between Hollywood singer’s age and their followers list
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 3 -->
+                    <div class="blog-card">
+                        <div class="image">
+                            <img src="8888.png" alt="Blog Post 3">
+                        </div>
+                        <div class="content">
+                            <h4>
+                                <a href="https://docs.google.com/document/d/1iAnWozUdVlqp2cDFV0qtfxUo22qK0C8cTbCoTjpCWdI/edit" target="_blank" style="text-decoration: none; color: inherit;">
+                                    An Investigation on the Effect of Underlying Script Structures on Memory Recall
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 4 -->
+                    <div class="blog-card">
+                        <div class="image">
+                            <img src="00000.jpeg" alt="Blog Post 4">
+                        </div>
+                        <div class="content">
+                            <h4>
+                                <a href="https://docs.google.com/document/d/1abc123/edit" target="_blank" style="text-decoration: none; color: inherit;">
+                                    Decoding the Enigma: Unveiling the True Essence of AI and Separating Fact from Fiction (AI Series — Part I)
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 5 -->
+                    <div class="blog-card">
+                        <div class="image">
+                            <img src="8888.png" alt="Blog Post 5">
+                        </div>
+                        <div class="content">
+                            <h4>
+                                <a href="https://docs.google.com/document/d/1cuXG4a046usP_vqxqWLNtbt9WppR2RKB/edit" target="_blank" style="text-decoration: none; color: inherit;">
+                                    Investigating the effect of antibiotics on the fermentation on three different types of milk: Cow, Goat and Buffalo. 
+
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 6 -->
+                    <div class="blog-card">
+                        <div class="image">
+                            <img src="8888.png" alt="Blog Post 6">
+                        </div>
+                        <div class="content">
+                            <h4>
+                                <a href="https://docs.google.com/document/d/1THorvVI5NZ6mEHo6fHtqQyRC4t0sR-Qg/edit" target="_blank" style="text-decoration: none; color: inherit;">
+                                    Portrayal of hate and love as a reciprocal passion through Floral Miguel and Angela Vicario
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 7 -->
+                    <div class="blog-card">
+                        <div class="image">
+                            <img src="00000.jpeg" alt="Blog Post 7">
+                        </div>
+                        <div class="content">
+                            <h4>
+                                <a href="https://medium.com/@kargic/get-ready-to-unlock-the-ai-secrets-one-byte-at-a-time-3aa7a55683b" target="_blank" style="text-decoration: none; color: inherit;">
+                                    Get ready to unlock the AI secrets, one byte at a time
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 8 -->
+                    <div class="blog-card">
+                        <div class="image">
+                            <img src="2222222.png" alt="Blog Post 8">
+                        </div>
+                        <div class="content">
+                            <h4>
+                                <a href="https://kargichauhan.substack.com/publish/home?utm_source=substack" target="_blank" style="text-decoration: none; color: inherit;">
+                                    WIP
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- Copyright -->
+<div id="copyright">
+    <ul>
+        <li>&copy; Kargichauhan</li>
+        <li>Unauthorized use of my stuff is strictly prohibited, unless you bring me matcha :( </li>
+    </ul>
+</div>
+
+
+       
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
