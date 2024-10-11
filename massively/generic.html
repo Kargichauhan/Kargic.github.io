@@ -1,0 +1,469 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Resume</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Skills Section Styles */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 50px 0;
+        }
+
+        .skill {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: conic-gradient(#f06d06 85%, #e0e0e0 15%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            font-size: 18px;
+            color: #f06d06;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill span {
+            position: absolute;
+            font-size: 1.2em;
+            color: #333;
+            bottom: -30px;
+        }
+
+        .skill h3 {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .skill p {
+            font-size: 0.9em;
+            margin: 0;
+            color: #333;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        p.description {
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<head></head>
+    <title>Resume</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Skills Section Styles */
+        .skills-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .skills-section h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .skills-section p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .skill-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0;
+            width: 80%;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        .skill-bar span {
+            flex: 1;
+            text-align: left;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .progress-bar {
+            flex: 3;
+            height: 20px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            margin-left: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar .progress {
+            height: 100%;
+            background: linear-gradient(45deg, #a79b98, #9c6ba5);
+            width: 0;
+            transition: width 1.5s ease-in-out;
+        }
+
+        .progress-bar[data-skill="python"] .progress {
+            width: 100%;
+        }
+
+        .progress-bar[data-skill="java"] .progress {
+            width: 90%;
+        }
+
+        .progress-bar[data-skill="cpp"] .progress {
+            width: 85%;
+        }
+
+        .progress-bar[data-skill="php"] .progress {
+            width: 80%;
+        }
+
+        .progress-bar[data-skill="mysql"] .progress {
+            width: 80%;
+        }
+
+        .progress-bar[data-skill="tensorflow"] .progress {
+            width: 65%;
+        }
+
+        .progress-bar[data-skill="htmlcss"] .progress {
+            width: 85%;
+        }
+
+        .progress-bar[data-skill="javascript"] .progress {
+            width: 85%;
+        }
+
+        .progress-bar[data-skill="git"] .progress {
+            width: 95%;
+        }
+
+        .progress-bar[data-skill="entity-framework"] .progress {
+            width: 95%;
+        }
+
+        .progress-bar[data-skill="software-dev"] .progress {
+            width: 100%;
+        }
+
+        .progress-bar[data-skill="android"] .progress {
+            width: 50%;
+        }
+
+        .progress-bar[data-skill="gui-design"] .progress {
+            width: 80%;
+        }
+
+        .progress-bar[data-skill="ml"] .progress {
+            width: 95%;
+        }
+
+	ul.icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+    </style>
+</head>
+
+<body class="is-preload">
+
+   
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">My Resume</a>
+        </header>
+
+		
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li class="active"><a href="resume.html">Resume</a></li>
+                <li><a href="research.html">Research Paper</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+				<li><a href="blog.html">Blog</a></li>
+            </ul>
+			<ul class="icons">
+				<li><a href="https://x.com/Kargichauhan_" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="https://github.com/Kargichauhan" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="https://www.linkedin.com/in/kargichauhan/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			</ul>
+			
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Resume Section -->
+            <section class="post">
+                <header class="major">
+                    <h1>Professional Resume</h1>
+                    <p>Discover my professional journey, accomplishments, and skillset.</p>
+                </header>
+
+                <!-- Resume Summary -->
+                <h2>Summary</h2>
+                <p>I'm a passionate Machine Learning Engineer with extensive experience in AI, ML, and software development. I
+                    specialize in building cutting-edge AI solutions, optimizing large-scale systems, and spearheading innovative
+                    projects. My strong focus on transparency, ethical AI, and impactful results helps me contribute meaningfully to
+                    both academia and industry.</p>
+
+                <hr />
+
+                <!-- Experience Section -->
+                <h2>Experience</h2>
+                <ul class="alt">
+                    <li>
+                        <h3>Machine Learning Researcher</h3>
+                        <h4>San José State University Research Foundation</h4>
+                        <h4>Aug 2024 - Present</h4>
+                        <p>Leading AI research in Large Language Models (LLMs) for innovative AI-driven solutions.</p>
+                        <p>Focused on Explainable AI (XAI) to enhance transparency in complex AI systems.</p>
+                        <p>Bridging theory and practical AI applications, transforming ideas into real-world solutions.</p>
+                    </li>
+                    <li>
+                        <h3>Machine Learning Engineer</h3>
+                        <h4>3UM</h4>
+                        <p>Achieved 25% improvement in LLM accuracy by fine-tuning using PyTorch and Huggingface.</p>
+                        <p>Applied advanced techniques like KV cache, Rotary Embeddings to optimize model performance.</p>
+                        <p>Seamlessly integrated models into cloud-based platforms to improve distributed systems.</p>
+                    </li>
+                    <li>
+                        <h3>ML Research Scientist</h3>
+                        <h4>NASA JPL</h4>
+                        <p>Developed AI systems for CubeSat, reaching 97% accuracy in pose estimation with vision sensors.</p>
+                        <p>Managed multi-modal neural network training and large-scale data processing infrastructure.</p>
+                        <p>Contributed to the NASA Johnson Space Center’s pose estimation challenge.</p>
+                    </li>
+                    <li>
+                        <h3>Data Science Researcher</h3>
+                        <h4>Mining Engineering</h4>
+                        <p>Designed a virtual St. Xavier Mine, enhancing simulations with advanced AI and ML algorithms.</p>
+                        <p>Optimized A* and Dijkstra pathfinding, reducing execution times by 23%.</p>
+                        <p>Improved simulation responsiveness and efficiency in real-time environments.</p>
+                    </li>
+                    <li>
+                        <h3>HCI Researcher</h3>
+                        <h4>NJIT Ying Wu College of Computing</h4>
+                        <p>Led research on ethical AI in aging, focusing on fairness, transparency, and inclusivity.</p>
+                        <p>Conducted extensive reviews and formulated research questions for aging-related AI applications.</p>
+                        <p>Collaborated with Professor Alisha Pradhan to lead initiatives in AI for older adults.</p>
+                    </li>
+                    <li>
+                        <h3>Data Science Researcher</h3>
+                        <h4>Health Science - Medicine</h4>
+                        <p>Explored Cyberlearning, focusing on co-robotic teachable agents for immersive education.</p>
+                        <p>Developed virtual agents using VR, creating engaging learning experiences for medical students.</p>
+                        <p>Collaborated with Dr. Burleson on innovative educational technology research.</p>
+                    </li>
+                    <li>
+                        <h3>Software Engineer Researcher</h3>
+                        <h4>Aerospace Engineering</h4>
+                        <p>Created a virtual lab simulating aerospace scenarios using ML and AI techniques.</p>
+                        <p>Applied advanced simulation methods to optimize aerospace designs and predict outcomes.</p>
+                        <p>Utilized MATLAB and ML algorithms to enhance decision-making and system performance.</p>
+                    </li>
+                    <li>
+                        <h3>Software Engineer Researcher</h3>
+                        <h4>Industrial Engineering</h4>
+                        <p>Optimized supply chain networks through innovative algorithms and models for MADE lab.</p>
+                        <p>Improved production efficiency by applying lean manufacturing and process improvements.</p>
+                        <p>Analyzed human-machine interactions to enhance occupational safety and efficiency.</p>
+                    </li>
+                    <li>
+                        <h3>Software Engineer Intern</h3>
+                        <h4>GirlScript Summer of Code</h4>
+                        <p>Developed and integrated 3D models for visual rendering using Three.js and Cesium.</p>
+                        <p>Utilized Docker for scalable deployment of project instances, contributing to efficient workflows.</p>
+                        <p>Delivered comprehensive documentation, ensuring smooth project handoff and collaboration.</p>
+                    </li>
+                </ul>
+
+                <hr />
+
+                <!-- Education Section -->
+                <h2>Education</h2>
+                <div class="education-section">
+                    <h3>BS in Information and Data Science, Minor in Game Design and Development</h3>
+                    <p>University of Arizona</p>
+                    <p>Arizona, USA | 2020 - 2024 | GPA: 3.9 / 4.0</p>
+
+					<h3>Navrachana International School</h3>
+                    <p>International Baccalaureate</p>
+                    <p>Vadodara, IND </p>
+                </div>
+				
+
+                <hr />
+
+                <!-- Skills Section -->
+            <section class="skills-section">
+                <h2>Skills</h2>
+                <p>Behold, witness the array of skills and expertise I've honed through countless hours of
+                    dedication and passion for coding!</p>
+
+                <div class="skill-bar">
+                    <span>Python</span>
+                    <div class="progress-bar" data-skill="python">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span>Java</span>
+                    <div class="progress-bar" data-skill="java">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span>C/C++</span>
+                    <div class="progress-bar" data-skill="cpp">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span>PHP</span>
+                    <div class="progress-bar" data-skill="php">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span>MySQL</span>
+                    <div class="progress-bar" data-skill="mysql">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span>TensorFlow</span>
+                    <div class="progress-bar" data-skill="tensorflow">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span>HTML/CSS</span>
+                    <div class="progress-bar" data-skill="htmlcss">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span>JavaScript</span>
+                    <div class="progress-bar" data-skill="javascript">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span>Git</span>
+                    <div class="progress-bar" data-skill="git">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span>Entity Framework Design</span>
+                    <div class="progress-bar" data-skill="entity-framework">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span>Software Development</span>
+                    <div class="progress-bar" data-skill="software-dev">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span>Android Programming</span>
+                    <div class="progress-bar" data-skill="android">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span>GUI Design</span>
+                    <div class="progress-bar" data-skill="gui-design">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span>Machine Learning</span>
+                    <div class="progress-bar" data-skill="ml">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+
+						
+					<section>
+						
+					<!-- Resume Download Section -->
+<div id="resume-download" style="text-align: center; margin-top: 20px;">
+    <a href="Kargichauhan_CV.pdf" download class="button">Download My Resume</a>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+    <section class="split contact">
+        
+</footer>
+
+<!-- Copyright -->
+<div id="copyright">
+    <ul>
+        <li>&copy; Kargichauhan</li>
+    </ul>
+</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+	
